@@ -58,10 +58,10 @@ public class GrammarGenerator {
         for(char alpha = 'a'; alpha<'z'; alpha++){
             terminals.add(alpha);
         }
-        
+        ArrayList a = new ArrayList();
         for(int i=0; i<nonTerminals.size(); i++){
             Set s = new Set();
-            ArrayList a = new ArrayList();
+            
             for(int j=0; j<ruleCount; j++){
                 if(rand.nextInt(10)<8){
                    s.add( terminals.get(rand.nextInt(terminals.size())));
@@ -75,7 +75,8 @@ public class GrammarGenerator {
             m.put( nonTerminals.get(i), s);
 
         }
-        this.rules=m;
+        this.rulesList=a;
+        this.rules =m;
         return m;
     }
     

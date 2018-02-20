@@ -39,7 +39,7 @@ public class UnreachableAlgorithm {
         long startTime = System.nanoTime();
 
 
-
+        System.out.println("Size of rules set"+rulesList.size());
 
         for(int i=0;i<rulesList.size();i++){
             reachable.add(rulesList.get(i));

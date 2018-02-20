@@ -27,12 +27,12 @@ int main() {
 		}
 		else if (input == "2") {
 			cout << "Running aplication...\n";
-			UnreachableAlgorithm a = UnreachableAlgorithm(GenerateGrammar(1000, 10));
+			UnreachableAlgorithm a = UnreachableAlgorithm(GenerateGrammar(5000, 10));
 			a.execute();
 		}
 		else if (input == "3") {
 			cout << "Running aplication...\n";
-			GenerateGrammar g = GenerateGrammar(1000, 10);
+			GenerateGrammar g = GenerateGrammar(5000, 10);
 			execute(g.getTerminals().getList(), g.getNonTerminals().getList(), g.getRules().getList());
 		}
 	} while (input != "x");
