@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package cs408.project;
 
 import java.util.ArrayList;
@@ -11,14 +6,14 @@ import java.util.ArrayList;
  *
  * @author Josh
  */
-public class Set extends ArrayList<Integer> {
+public class Set extends ArrayList {
 
     public Set(){
         super();
     }
     
     @Override
-    public boolean add(Integer i){
+    public boolean add(Object i){
         if(!this.contains(i)) {
             super.add(i);
             return true;

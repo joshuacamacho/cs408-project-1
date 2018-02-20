@@ -23,5 +23,11 @@
     <ClInclude Include="Set.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="GenerateGrammar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UnreachableAlgorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

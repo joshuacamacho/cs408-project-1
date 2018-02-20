@@ -10,19 +10,15 @@ using namespace std;
 class Set 
 {
 private:
-	vector<int> v;
-	
-	void erase(int a) {
-		v.erase(remove(v.begin(), v.end(), a), v.end());
-	}
+	vector<string> v;
 
 public:
 	Set() {	
-		v = vector<int>();
+		v = vector<string>();
 	}
 
-	Set(vector<int> p) {
-		v = vector<int>(p);
+	Set(vector<string> p) {
+		v = vector<string>(p);
 	}
 
 	int size() {
@@ -36,11 +32,11 @@ public:
 		cout << "]\n";
 	}
 
-	void add(int a) {
+	void add(string a) {
 		if (!contains(a)) v.push_back(a);
 	}
 
-	int operator[](const int& a) {
+	string operator[](const int& a) {
 		return v[a];
 	}
 
@@ -74,15 +70,19 @@ public:
 		return l;
 	}
 
-	void extract(int a) {
+	void extract(string a) {
 		v.erase(remove(v.begin(), v.end(), a), v.end());
 	}
 	
-	bool contains(int b) {
+	bool contains(string b) {
 		for (int i = 0; i < v.size(); i++) {
 			if (v[i] == b) return true;
 		}
 		return false;
+	}
+
+	vector<string> getList() {
+		return v;
 	}
 };
 
